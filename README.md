@@ -1,10 +1,6 @@
-# Double Exposure LoRA
+﻿# Double Exposure LoRA
 
-[中文](#中文说明) | [English](#english)
-
----
-
-## 中文说明
+## 中文
 
 ### 项目简介
 
@@ -29,6 +25,7 @@
 ├─ new_flow1.png ... new_flow9.png    # 生成结果示例
 └─ merged/
    ├─ Flux2_00001_.png                # 我最满意的一张作品
+   ├─ workflow_screenshot.png          # 工作流截图
    └─ merged_1.png ... merged_9.png   # 左右对比图（缺 8）
 ```
 
@@ -44,13 +41,17 @@
 - LoRA 权重：`0.7 ~ 1.1`（推荐从 `0.85` 起）
 - 图生图重绘强度：`0.30 ~ 0.60`
 - 采样步数：`20 ~ 35`
-- 提示词建议：突出 “double exposure, silhouette, layered texture, cinematic lighting” 等关键词
+- 提示词建议：突出 `double exposure, silhouette, layered texture, cinematic lighting` 等关键词
 
 ### 效果展示
 
 最满意作品：
 
 ![Favorite Result](merged/Flux2_00001_.png)
+
+工作流截图：
+
+![Workflow Screenshot](merged/workflow_screenshot.png)
 
 对比图（左：输入，右：风格结果）：
 
@@ -62,6 +63,11 @@
 ![Comparison 6](merged/merged_6.png)
 ![Comparison 7](merged/merged_7.png)
 ![Comparison 9](merged/merged_9.png)
+
+### 素材来源声明
+
+- 对比图中左侧的背景图下载自 Civitai 作者 [Lady_Luminous](https://civitai.com/user/Lady_Luminous)。
+- 原素材版权及相关使用权利归原作者及其发布平台规则所有。
 
 ### 许可证
 
@@ -94,6 +100,7 @@ You can feed in your own image and generate outputs in this style. By tuning inf
 ├─ new_flow1.png ... new_flow9.png    # sample outputs
 └─ merged/
    ├─ Flux2_00001_.png                # my favorite result
+   ├─ workflow_screenshot.png          # workflow screenshot
    └─ merged_1.png ... merged_9.png   # side-by-side comparisons (no 8)
 ```
 
@@ -102,7 +109,7 @@ You can feed in your own image and generate outputs in this style. By tuning inf
 1. Put `Style_DoubleExposure.safetensors` into your LoRA folder (e.g., your WebUI/ComfyUI LoRA path).
 2. Use your preferred base model and workflow (text-to-image or image-to-image).
 3. Load this LoRA and run inference with your prompt.
-4. For closest style transfer, start with image-to-image using your own photo/art as input.
+4. For closest style transfer, start with image-to-image using your own photo or art as input.
 
 ### Recommended Settings (Adjust Freely)
 
@@ -117,6 +124,10 @@ Favorite piece:
 
 ![Favorite Result](merged/Flux2_00001_.png)
 
+Workflow screenshot:
+
+![Workflow Screenshot](merged/workflow_screenshot.png)
+
 Comparisons (left: input, right: stylized output):
 
 ![Comparison 1](merged/merged_1.png)
@@ -127,6 +138,11 @@ Comparisons (left: input, right: stylized output):
 ![Comparison 6](merged/merged_6.png)
 ![Comparison 7](merged/merged_7.png)
 ![Comparison 9](merged/merged_9.png)
+
+### Attribution
+
+- The left-side background images used in the comparison sheets were downloaded from Civitai creator [Lady_Luminous](https://civitai.com/user/Lady_Luminous).
+- Copyright and usage rights of the original source images remain with the original creator and the platform rules.
 
 ### License
 
